@@ -1,7 +1,7 @@
 how to register/configure to listeners,servlets.. w/o web.xml (it is possible) 
 => 1) using annotations
    2) w/o spring => if no web.xml then tomcat goes to meta-inf-> servers-> javax.servlet.servletContainerInitializer
-      so need to write class using this. [CHECK IMPLEMENTATION and also @HandlesTypes annotation]
+      so need to write class using this and call context.addServlet. [CHECK IMPLEMENTATION and also @HandlesTypes annotation]
 
 # Spring
 
