@@ -3,6 +3,8 @@ how to register/configure to listeners,servlets.. w/o web.xml (it is possible)
    2) w/o spring => if no web.xml then tomcat goes to meta-inf-> servers-> javax.servlet.servletContainerInitializer
       so need to write class using this and call context.addServlet. [CHECK IMPLEMENTATION and also @HandlesTypes annotation]
 
+They came with java configuration to support boot
+
 # Spring
 
 Although automatic Spring configuration with component scanning and automatic wiring is preferable in many cases, there are times when automatic configuration isn’t an option and you must configure Spring explicitly. For instance, let’s say that you want to wire components from some third-party library into your application. Because you don’t have the source code for that library, there’s no opportunity to annotate its classes with @Component and @Autowired. Therefore, automatic configuration isn’t an option.
